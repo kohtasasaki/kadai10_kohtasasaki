@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="btn1">ぐー</div>
+  <div id="btn2">ちょき</div>
+  <div id="btn3">ぱー</div>
+
+  <!-- <div id="CPU1"></div>
+  <div id="CPU2"></div>
+  <div id="CPU3"></div>   -->
+  <script>
+
+  //ボタンを押したら、コンピュータの手がランダムに表示される
+
+  var rand = Math.floor(Math.random() * 3)
+
+  btn1.addEventListener('click',function(){
+    if (rand == 0) {
+      btn1.innerHTML = '<h1>CPU:ぐー...あいこ</h1>';
+    }else if(rand == 1){
+      btn1.innerHTML = '<h1>CPU:ちょき...あなたの勝ち：</h1>';
+    }else if(rand == 2){
+      btn1.innerHTML = '<h1>CPU:ぱー...あなたの負け</h1>';
+    }
+
+  });
+
+  btn2.addEventListener('click',function(){
+    if (rand == 0) {
+      btn2.innerHTML = '<h1>CPU:ぐー...あなたの負け</h1>';
+    }else if(rand == 1){
+      btn2.innerHTML = '<h1>CPU:ちょき...あいこ：</h1>';
+    }else if(rand == 2){
+      btn2.innerHTML = '<h1>CPU:ぱー...あなたの勝ち</h1>';
+    }
+
+  });
+
+  btn3.addEventListener('click',function(){
+    if (rand == 0) {
+      btn3.innerHTML = '<h1>CPU:ぐー...あなたの勝ち</h1>';
+    }else if(rand == 1){
+      btn3.innerHTML = '<h1>CPU:ちょき...あなたの負け：</h1>';
+    }else if(rand == 2){
+      btn3.innerHTML = '<h1>CPU:ぱー...あいこ</h1>';
+    }
+
+  });
+
+
+
+
+
+    // 1.じゃんけんをつくる
+    // 2.画像を使う
+    // 3.コンピューターの手も考えて表示
+    // 4.if文に限らず何を使ってもok
+    // 5.Gitにプッシュ
+  </script>
+</body>
+</html>
