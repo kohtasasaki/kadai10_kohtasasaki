@@ -7,6 +7,7 @@
   <title>Document</title>
 </head>
 <body>
+  <img src="./img/janken.jpeg" alt="">
   <div id="btn1">ぐー</div>
   <div id="btn2">ちょき</div>
   <div id="btn3">ぱー</div>
@@ -22,33 +23,33 @@
 
   btn1.addEventListener('click',function(){
     if (rand == 0) {
-      btn1.innerHTML = '<h1>CPU:ぐー...あいこ</h1>';
+      btn1.innerHTML = '<h1>CPU:ぐー...あいこ：<br><img src="./img/g.jpg" alt="" /></h1>';
     }else if(rand == 1){
-      btn1.innerHTML = '<h1>CPU:ちょき...あなたの勝ち：</h1>';
+      btn1.innerHTML = '<h1>CPU:ちょき...あなたの勝ち：<br><img src="./img/c.jpg" alt="" /></h1>';
     }else if(rand == 2){
-      btn1.innerHTML = '<h1>CPU:ぱー...あなたの負け</h1>';
+      btn1.innerHTML = '<h1>CPU:ぱー...あなたの負け：<br><img src="./img/p.jpg" alt="" /></h1>';
     }
 
   });
 
   btn2.addEventListener('click',function(){
     if (rand == 0) {
-      btn2.innerHTML = '<h1>CPU:ぐー...あなたの負け</h1>';
+      btn2.innerHTML = '<h1>CPU:ぐー...あなたの負け：<br><img src="./img/g.jpg" alt="" /></h1>';
     }else if(rand == 1){
-      btn2.innerHTML = '<h1>CPU:ちょき...あいこ：</h1>';
+      btn2.innerHTML = '<h1>CPU:ちょき...あいこ：<br><img src="./img/c.jpg" alt="" /></h1>';
     }else if(rand == 2){
-      btn2.innerHTML = '<h1>CPU:ぱー...あなたの勝ち</h1>';
+      btn2.innerHTML = '<h1>CPU:ぱー...あなたの勝ち：<br><img src="./img/p.jpg" alt="" /></h1>';
     }
 
   });
 
   btn3.addEventListener('click',function(){
     if (rand == 0) {
-      btn3.innerHTML = '<h1>CPU:ぐー...あなたの勝ち</h1>';
+      btn3.innerHTML = '<h1>CPU:ぐー...あなたの勝ち：<br><img src="./img/g.jpg" alt="" /></h1>';
     }else if(rand == 1){
-      btn3.innerHTML = '<h1>CPU:ちょき...あなたの負け：</h1>';
+      btn3.innerHTML = '<h1>CPU:ちょき...あなたの負け：<br><img src="./img/c.jpg" alt="" /></h1>';
     }else if(rand == 2){
-      btn3.innerHTML = '<h1>CPU:ぱー...あいこ</h1>';
+      btn3.innerHTML = '<h1>CPU:ぱー...あいこ：<br><img src="./img/p.jpg" alt="" /></h1>';
     }
 
   });
